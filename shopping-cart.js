@@ -5,7 +5,7 @@
 //console.log('Shopping');
 
 const shoppingCost = 20;
-const cart = [];
+export const cart = [];
 
 export const addItemToCard = function(product, quantity){
     cart.push({product, quantity});
@@ -17,6 +17,10 @@ const totalQuantity = 10;
 export {totalPrice, totalQuantity as quantity};
 
 
+/*
+
 export default function(product){
     console.log(product);
 }
+
+*/
