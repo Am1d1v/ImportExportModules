@@ -15,3 +15,8 @@ export const addItemToCard = function(product, quantity){
 const totalPrice = 500;
 const totalQuantity = 10;
 export {totalPrice, totalQuantity as quantity};
+
+
+export default function(product){
+    console.log(product);
+}

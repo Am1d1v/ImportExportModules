@@ -14,6 +14,7 @@ import {
 */    
 
 import * as shoppingCart from './shopping-cart.js'
+import displayProductName from './shopping-cart.js'
 
 /*
 
@@ -24,3 +25,4 @@ console.log(quantity);
 
 
 shoppingCart.addItemToCard('Milk', 3);
+displayProductName('Cake');
