@@ -27,6 +27,30 @@ export default function(product){
 
 console.log(cart);
 
+
+// Global await
+
+/*
+
 const res = await fetch('https://jsonplaceholder.typicode.com/posts');
 const data = await res.json();
 console.log(data);
+
+console.log('Some text');
+
+*/
+
+const getLastPost = async function(){
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await res.json();
+    console.log(data);
+
+    return {title: data.at(-1).title}
+}
+
+const lastPostData = getLastPost();
+console.log(lastPostData);
+lastPostData.then(data => console.log(data));
+
+const lastPostData1 = await getLastPost();
+console.log(lastPostData1);
